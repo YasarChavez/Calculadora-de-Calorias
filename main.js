@@ -26,8 +26,28 @@ function calculateCalories() {
       caloricNeeds += 500; // Aumentar 500 calorías para ganancia de masa
     }
   
-    // Muestra el resultado
-    document.getElementById('calories-output').textContent = caloricNeeds.toFixed(2);
-    document.querySelector('.result').style.display = 'block';
-  }
+    // Cálculo de macronutrientes (en porcentajes comunes)
+    const carbPercentage = 0.50; // 50% de las calorías para carbohidratos
+    const proteinPercentage = 0.25; // 25% de las calorías para proteínas
+    const fatPercentage = 0.25; // 25% de las calorías para grasas
   
+    // Cálculo de calorías en macronutrientes
+    const carbCalories = caloricNeeds * carbPercentage;
+    const proteinCalories = caloricNeeds * proteinPercentage;
+    const fatCalories = caloricNeeds * fatPercentage;
+  
+    // Conversión de calorías a gramos
+    const carbGrams = carbCalories / 4;
+    const proteinGrams = proteinCalories / 4;
+    const fatGrams = fatCalories / 9;
+  
+    // Muestra el resultado en calorías
+    document.getElementById('calories-output').textContent = caloricNeeds.toFixed(2);
+
+    // Muestra los resultados de los macronutrientes
+    document.getElementById('carbs-output').textContent = carbGrams.toFixed(2);
+    document.getElementById('proteins-output').textContent = proteinGrams.toFixed(2);
+    document.getElementById('fats-output').textContent = fatGrams.toFixed(2);
+
+    document.querySelector('.result').style.display = 'block';
+}

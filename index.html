@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculadora de Calorías</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <div class="container">
@@ -59,7 +60,12 @@
 
     <div id="result" class="result">
       <h2>Calorías necesarias: <span id="calories-output"></span></h2>
+      <h3>Distribución de macronutrientes:</h3>
+      <p><i class="fa-solid fa-bread-slice"></i> Carbohidratos: <span id="carbs-output"></span> g.</p>
+      <p><i class="fa-solid fa-drumstick-bite"></i> Proteínas: <span id="proteins-output"></span> g.</p>
+      <p><i class="fa-solid fa-bottle-droplet"></i> Grasas: <span id="fats-output"></span> g.</p>
     </div>
+    
   </div>
 
   <script src="main.js"></script>
