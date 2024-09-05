@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Calorías</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de Calorías</h1>
+
+    <form id="calorie-form">
+      <div class="form-group">
+        <label for="age">Edad (años):</label>
+        <input type="number" id="age" min="1" required>
+      </div>
+
+      <div class="form-group">
+        <label for="gender">Sexo:</label>
+        <select id="gender" required>
+          <option value="male">Hombre</option>
+          <option value="female">Mujer</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="height">Altura (cm):</label>
+        <input type="number" id="height" min="1" required>
+      </div>
+
+      <div class="form-group">
+        <label for="weight">Peso actual (kg):</label>
+        <input type="number" id="weight" min="1" required>
+      </div>
+
+      <div class="form-group">
+        <label for="activity-level">Nivel de actividad:</label>
+        <select id="activity-level" required>
+          <option value="1.2">Sedentario (poco o ningún ejercicio)</option>
+          <option value="1.375">Ligero (ejercicio ligero 1-3 días/semana)</option>
+          <option value="1.55">Moderado (ejercicio moderado 3-5 días/semana)</option>
+          <option value="1.725">Activo (ejercicio intenso 6-7 días/semana)</option>
+          <option value="1.9">Muy activo (ejercicio muy intenso, trabajo físico)</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="goal">Objetivo:</label>
+        <select id="goal" required>
+          <option value="maintain">Mantenimiento</option>
+          <option value="lose">Pérdida de peso</option>
+          <option value="gain">Ganancia de masa muscular</option>
+        </select>
+      </div>
+
+      <button type="button" onclick="calculateCalories()">Calcular</button>
+    </form>
+
+    <div id="result" class="result">
+      <h2>Calorías necesarias: <span id="calories-output"></span></h2>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
