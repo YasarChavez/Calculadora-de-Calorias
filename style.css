@@ -1,9 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background: #5C258D;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #4389A2, #5C258D);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #4389A2, #5C258D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
 }
 
 body {
@@ -41,7 +48,8 @@ label {
   color: #34495e;
 }
 
-input, select {
+input,
+select {
   width: 100%;
   padding: 12px;
   font-size: 16px;
@@ -50,7 +58,8 @@ input, select {
   transition: border-color 0.3s ease;
 }
 
-input:focus, select:focus {
+input:focus,
+select:focus {
   outline: none;
   border-color: #3498db;
 }
@@ -85,4 +94,20 @@ button:hover {
   font-size: 28px;
   color: #2c3e50;
   margin-bottom: 10px;
+}
+
+/* Media queries para pantallas pequeñas */
+@media (max-width: 600px) {
+  .container {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  button {
+    font-size: 16px;
+  }
 }
