@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
-
 * {
   margin: 0;
   padding: 0;
@@ -8,21 +7,17 @@
 }
 
 body {
-  background: #5C258D;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #4389A2, #5C258D);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #4389A2, #5C258D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
-}
-
-body {
   font-family: 'Roboto', sans-serif;
-  background-color: #f8f9fa;
+  background: #5C258D;
+  background: -webkit-linear-gradient(to top, #4389A2, #5C258D);
+  background: linear-gradient(to top, #4389A2, #5C258D);
   color: #333;
   line-height: 1.6;
   padding: 20px;
 }
 
 .container {
-  max-width: 500px;
+  max-width: 600px;
   margin: 0 auto;
   padding: 30px;
   background-color: white;
@@ -83,7 +78,6 @@ button:hover {
 
 .result {
   margin-top: 30px;
-  text-align: center;
   display: none;
   padding: 20px;
   background-color: #f1f8ff;
@@ -91,9 +85,33 @@ button:hover {
 }
 
 .result h2 {
-  font-size: 28px;
+  font-size: 24px;
   color: #2c3e50;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.result-section {
+  margin-bottom: 30px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.result-section h3 {
+  font-size: 18px;
+  color: #3498db;
   margin-bottom: 10px;
+}
+
+.result-section p {
+  margin-bottom: 5px;
+}
+
+.fa-solid {
+  margin-right: 5px;
+  color: #3498db;
 }
 
 /* Media queries para pantallas pequeñas */
